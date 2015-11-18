@@ -30,12 +30,12 @@ import javax.swing.border.LineBorder;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-// need to add font to the blue stuff
+
 /**
  * CalendarView is the view part of the mvc pattern. Its duty is to display the
  * calendar. This class IS-A JPanel and IS-A ChangeListener.
  * 
- * @author naghmeh
+ * @author TeamSharks
  * 
  */
 public class MonthlyView extends JPanel implements ChangeListener
@@ -261,6 +261,7 @@ public class MonthlyView extends JPanel implements ChangeListener
 		dayLabel.setText(model.getCurrentDayoftheWeek() + " "
 				+ (model.getCurrentDate().get(Calendar.MONTH) + 1) + "/"
 				+ model.getCurrentDay());
+		//JTextArea dayViewArea = new JTextArea(20,50);
 
 		ArrayList<Event> listofE = new ArrayList<Event>();
 		listofE = model.getEventsOfToday();

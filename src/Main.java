@@ -9,6 +9,7 @@ public class Main// extends EventView
 			public void run()
 			{
 				CalendarFrame calendar = new CalendarFrame();
+				System.err.println("This is a test");
 				// createAndShowGUI();
 			}
 		});

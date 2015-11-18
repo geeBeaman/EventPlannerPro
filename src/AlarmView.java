@@ -35,7 +35,7 @@ public class AlarmView extends MonthlyView
 	// time = new Time(t[3]);
 	// date = new int[]
 	// { t[0], t[1], t[2] };
-	// }
+	// }TEST
 
 	public static void AddAlarmGUI()
 	{

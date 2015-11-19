@@ -35,7 +35,11 @@ import javax.swing.event.ChangeListener;
  * CalendarView is the view part of the mvc pattern. Its duty is to display the
  * calendar. This class IS-A JPanel and IS-A ChangeListener.
  * 
+<<<<<<< HEAD
  * @author TeamSharks
+=======
+ * @author Fion
+>>>>>>> 342403544044fb552f2e1956737273f48ae07ec7
  * 
  */
 public class MonthlyView extends JPanel implements ChangeListener

@@ -67,7 +67,7 @@ public class ControllerPanel extends JPanel
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				model.prevDay();
+				model.prevMonth();
 
 			}
 		});
@@ -90,7 +90,7 @@ public class ControllerPanel extends JPanel
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				model.nextDay();
+				model.nextMonth();
 			}
 		});
 		/*

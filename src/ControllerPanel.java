@@ -29,7 +29,7 @@ import javax.swing.text.html.HTMLDocument.Iterator;
  * This is the controller part of the mvc pattern. The controller is responsible
  * for controlling the data flow.
  * 
- * @author naghmeh
+ * @author Sharks
  *
  */
 public class ControllerPanel extends JPanel

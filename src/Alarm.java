@@ -1,10 +1,8 @@
-/**
-* @author TeamSharks
-*/
-
 public class Alarm
 {
-	
+	/**
+	 * @author TeamSharks
+	 */
 	Time time;
 	int[] date;
 	

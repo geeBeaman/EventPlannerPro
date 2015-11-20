@@ -1,3 +1,9 @@
+/**
+ * 
+ * @author TeamSharks :)
+ *
+ */
+
 public class Main// extends EventView
 {
 	public static void main(String[] args)

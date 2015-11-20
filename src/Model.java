@@ -148,10 +148,6 @@ public class Model
 		return currentYear;
 	}
 
-	public void prevMonth()
-	{
-
-	}
 
 	/**
 	 * Changes the current Day to the previous day and notifies all the change
@@ -167,6 +163,17 @@ public class Model
 		}
 
 	}
+	
+	public void prevMonth()
+	{
+		currentDate.add(Calendar.MONTH, -1);
+		ChangeEvent event = new ChangeEvent(this);
+		for(ChangeListener l : listeners)
+		{
+			l.stateChanged(event);
+		}
+				
+	}
 
 	/**
 	 * Changes the current day to the next day and notifies all the change
@@ -177,6 +184,16 @@ public class Model
 		currentDate.add(Calendar.DATE, 1);
 		ChangeEvent event = new ChangeEvent(this);
 		for (ChangeListener l : listeners)
+		{
+			l.stateChanged(event);
+		}
+	}
+	
+	public void nextMonth()
+	{
+		currentDate.add(Calendar.MONTH, 1);
+		ChangeEvent event = new ChangeEvent(this);
+		for(ChangeListener l : listeners)
 		{
 			l.stateChanged(event);
 		}

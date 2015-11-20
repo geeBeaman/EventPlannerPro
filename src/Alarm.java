@@ -1,6 +1,8 @@
 public class Alarm
 {
-	// Testing Git !!!!!!!!!!!!!!!!!!!!!!!!!
+	/**
+	 * @author TeamSharks
+	 */
 	Time time;
 	int[] date;
 	

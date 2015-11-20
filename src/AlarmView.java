@@ -1,3 +1,6 @@
+/**
+ * @author TeamSharks
+ */
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -10,7 +13,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-
 import java.io.IOException;
 
 import javax.swing.JButton;
@@ -22,6 +24,19 @@ import javax.swing.JTextField;
 
 public class AlarmView extends MonthlyView
 {
+	final static Integer[] HOURS = new Integer[]{12,1,2,3,4,5,6,7,8,9,10,11};
+	final static String[] MINUTES = new String[]{
+		"00","01","02","03","04","05","06","07","08","09",
+		"10","11","12","13","14","15","16","17","18","19",
+		"20","21","22","23","24","25","26","27","28","29",
+		"30","31","32","33","34","35","36","37","38","39",
+		"40","41","42","43","44","45","46","47","48","49",
+		"50","51","52","53","54","55","56","57","58","59"
+		};
+	final static String[] MERIDIEM = new String[]{"AM","PM"};
+	
+	static Alarm alarm;
+	
 	Time time;
 	int[] date;
 
@@ -35,7 +50,7 @@ public class AlarmView extends MonthlyView
 	// time = new Time(t[3]);
 	// date = new int[]
 	// { t[0], t[1], t[2] };
-	// }
+	// }TEST
 
 	public static void AddAlarmGUI()
 	{
